@@ -1,11 +1,11 @@
-import UserList from "./app/Dave-Gray/features/user/UserList"
-import UserForm from "./app/Dave-Gray/features/user/UserForm"
+import PostForm from "./app/Dave-Gray/features/post/PostForm"
+import PostList from "./app/Dave-Gray/features/post/PostList"
 
 export default () => {
   return (
     <>
-      <UserForm/>
-      <UserList/>
+      <PostForm/>
+      <PostList/>
     </>
   )
 }

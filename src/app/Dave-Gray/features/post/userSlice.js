@@ -5,6 +5,10 @@ const initialState = {
         id: nanoid(),
         username: 'test01',
         email: 'test@email.com'
+    }, {
+        id: nanoid(),
+        username: 'user@',
+        email: 'user1@microsoftmail.com'
     }]
 }
 

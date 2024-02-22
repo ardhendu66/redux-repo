@@ -1,25 +1,32 @@
 import { useState } from "react"
-import { useDispatch } from "react-redux"
-import { nanoid } from "@reduxjs/toolkit"
+import { useDispatch, useSelector } from "react-redux"
 import { postAdded } from "./postSlice"
+import { selectAllUsers } from "./userSlice"
 
 export default () => {
-    const [title, setTitle] = useState("")
-    const [content, setContent] = useState("")
+    const [title, setTitle] = useState('')
+    const [content, setContent] = useState('')
+    const [userId, setUserId] = useState('')
+
     const dispatch = useDispatch()
+    const users = useSelector(selectAllUsers)
 
     const onSavePostClicked = (event) => {
         event.preventDefault()
         if(title && content) {
-            dispatch(postAdded({
-                id: nanoid(),
-                title: title,
-                content: content
-            }))
+            dispatch(postAdded(title, content, userId))
             setTitle('')
             setContent('')
         }
     }
+
+    const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
+
+    const userOptions = users.map(user => (
+        <option key={user.id} value={user.id}>
+            {user.email}
+        </option>
+    ))
 
     return (
         <center>
@@ -40,7 +47,12 @@ export default () => {
                         onChange={(event) => setContent(event.target.value)}
                     />
                     <br />
-                    <button onClick={onSavePostClicked}>Save Post</button>
+                    <select value={userId} onChange={event => setUserId(event.target.value)}>
+                        <option>select</option>
+                        {userOptions}
+                    </select>
+                    <br />
+                    <button onClick={onSavePostClicked} style={{width: '14%'}}>Save Post</button>
                 </form>
             </section>
         </center>
