@@ -1,10 +1,8 @@
-import PostForm from "./app/Dave-Gray/features/post/PostForm"
-import PostList from "./app/Dave-Gray/features/post/PostList"
+import PostList from "./app/Redux/features/async-thunk/PostList"
 
 export default () => {
   return (
     <>
-      <PostForm/>
       <PostList/>
     </>
   )

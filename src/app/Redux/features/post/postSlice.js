@@ -5,7 +5,7 @@ const initialState = {
     value: [{
         id: "1",
         title: "Learning Redux Toolkit",
-        content: `I've heard good thing`,
+        content: `Redux toolkit was introduced by Facebook.inc`,
         date: sub(new Date(), {minutes: 10}).toISOString(),
         reactions: {
             thumbsUp: 0,
@@ -56,15 +56,13 @@ export const postSlice = createSlice({
                 }
             }
         },
-        reactionsAdded: {
-            reducer: function(state, action) {
-                const { postId, reaction } = action.payload
-                const existingPost = state.value.find(post => post.id === postId)
-                if(existingPost) {
-                    existingPost.reactions[reaction]++
-                }
+        reactionsAdded: function(state, action) {
+            const { postId, reaction } = action.payload
+            const existingPost = state.value.find(post => post.id === postId)
+            if(existingPost) {
+                existingPost.reactions[reaction]++
             }
-        }
+        } 
     }
 })
 
