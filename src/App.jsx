@@ -1,9 +1,9 @@
-import PostList from "./app/Redux/features/async-thunk/PostList"
+import BlogList from "./app/blog-app/features/BlogList"
 
 export default () => {
   return (
     <>
-      <PostList/>
+      <BlogList />
     </>
   )
 }

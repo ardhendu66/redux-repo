@@ -2,7 +2,7 @@ import PostUser from "./postUser"
 import { useSelector } from "react-redux"
 import { selectAllPosts } from "./postSlice"
 import TimeAgo from "./TimeAgo"
-import ReactionButtton from "./ReactionButtton"
+import ReactionButton from "./ReactionButton"
 
 export default () => {
     const posts = useSelector(selectAllPosts)
@@ -21,7 +21,7 @@ export default () => {
                                 <PostUser userId={post.userId} />
                                 <TimeAgo timeStamp={post.date} />
                             </h5>
-                            <ReactionButtton post={post} />
+                            <ReactionButton post={post} />
                         </div>
                     )
                 })
