@@ -1,9 +1,9 @@
-import BlogList from "./app/blog-app/features/BlogList"
+import TodoList from "./app/RTK_Query/TodoList"
 
 export default () => {
   return (
     <>
-      <BlogList />
+      <TodoList />
     </>
   )
 }

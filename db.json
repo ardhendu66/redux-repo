@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "4",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "5",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "6",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "1",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "2",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    },
+    {
+      "id": "7",
+      "title": "Macbook Pro M3",
+      "description": "Fastest and thinest Macbook with M3 chip",
+      "brand": "Apple",
+      "color": "Silver",
+      "category": "SmartPhones",
+      "price": 225000,
+      "discount": "10%",
+      "link": "https://apple.com/products/macbook=prom3"
+    }
+  ]
+}
